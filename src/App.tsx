@@ -7,6 +7,7 @@ import '@mantine/core/styles.css'
 import User from './pages/user-dashboard/user'
 import LearningModules from './pages/LearningModules/LearningModules'
 import QuizPage from './pages/QuizPage/QuizPage'
+import { ChatBoxAIPage } from './pages/ChatBoxAIPage/ChatBoxAIPage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/user-dashboard" element={<User/>}/>
           <Route path="/learning-modules" element={<LearningModules/>}/>
           <Route path="/quizzes" element={<QuizPage/>}/>
+          <Route path="/chatbox" element={<ChatBoxAIPage/>}/>
         </Routes>
       </BrowserRouter>
     </MantineProvider>
