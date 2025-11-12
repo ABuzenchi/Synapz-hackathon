@@ -1,9 +1,10 @@
 import { NavbarComponent } from "../../components/navbar/navbar"
+import { WelcomeCard } from "../../components/welcomeCard/welcomeCard";
 
 const User=()=>{
     return(
     <div>
-        <NavbarComponent/>
+        <WelcomeCard/>
     </div>
     )
 }
