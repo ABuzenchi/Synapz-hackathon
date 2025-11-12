@@ -1,6 +1,6 @@
 .user-page-container {
   display: grid;
-  grid-template-columns: 200px 1fr 650px; /* navbar / main / right */
+  grid-template-columns: 80px 1fr 650px; /* navbar / main / right */
   gap: 20px;
   padding: 20px;
   height: 100vh;
