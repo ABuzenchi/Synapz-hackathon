@@ -125,3 +125,60 @@
   line-height: 1.4;
   font-weight: 500;
 }
+
+.notification-dropdown {
+  position: absolute;
+  top: 40px; /* sub clopoțel */
+  right: 0;
+  width: 320px;
+  max-height: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow-y: auto;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+/* Fiecare notificare */
+.notification-item {
+  padding: 12px 18px;
+  border-left: 5px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: background 0.2s ease;
+}
+
+.notification-item:hover {
+  background-color: #f0f4f8;
+}
+
+/* Tipuri notificări */
+.notification-item.warning {
+  border-left-color: #f59e0b; /* galben */
+}
+
+.notification-item.info {
+  border-left-color: #3b82f6; /* albastru */
+}
+
+.notification-item.success {
+  border-left-color: #10b981; /* verde */
+}
+
+/* Header-ul fiecărei notificări */
+.notification-from {
+  font-weight: 600;
+  color: #212121;
+}
+
+.notification-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.notification-message {
+  font-size: 0.95rem;
+  color: #333;
+}

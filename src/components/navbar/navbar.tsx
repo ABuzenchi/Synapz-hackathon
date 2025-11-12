@@ -29,7 +29,7 @@ export function NavbarComponent() {
             <MdFactCheck />
           </NavLink>
 
-          <NavLink to="/hr-feedback" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="HR Feedback">
+          <NavLink to="/chatbox" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="HR Feedback">
             <FiMessageSquare />
           </NavLink>
 
