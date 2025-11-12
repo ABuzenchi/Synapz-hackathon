@@ -36,10 +36,6 @@ export function NavbarComponent() {
           <NavLink to="/progress" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Progress">
             <FaChartLine />
           </NavLink>
-
-          <NavLink to="/settings" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Settings">
-            <FiSettings />
-          </NavLink>
         </nav>
       </div>
       

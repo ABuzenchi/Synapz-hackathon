@@ -8,6 +8,7 @@ import User from './pages/user-dashboard/user'
 import LearningModules from './pages/LearningModules/LearningModules'
 import QuizPage from './pages/QuizPage/QuizPage'
 import { ChatBoxAIPage } from './pages/ChatBoxAIPage/ChatBoxAIPage'
+import { ProgressPage } from './pages/ProgressPage/ProgressPage'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/learning-modules" element={<LearningModules/>}/>
           <Route path="/quizzes" element={<QuizPage/>}/>
           <Route path="/chatbox" element={<ChatBoxAIPage/>}/>
+          <Route path="/progress" element={<ProgressPage/>}/>
         </Routes>
       </BrowserRouter>
     </MantineProvider>
