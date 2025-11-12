@@ -1,0 +1,68 @@
+.navbar {
+  height: 700px;   
+  min-height: 190px;       /* Ocupă toată înălțimea */
+  width: 250px;           /* Lățime mai mică */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent, se mulează cu background */
+  backdrop-filter: blur(10px); /* efect blur pentru fundal */
+  display: flex;
+  flex-direction: column;
+  position: sticky;       /* rămâne vizibil când faci scroll */
+  top: 0;
+  /* padding: 1rem 0.5rem; */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px; /* <--- colțuri rotunde pentru întreg navbar-ul */
+  overflow: hidden;  
+}
+
+.header {
+  padding: 0 1rem;
+  height: 60px;          /* mai compact */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1a1b1e;
+}
+
+.linksWrapper {
+  flex-grow: 1; 
+  padding: 0.5rem 0.75rem;
+  margin-top: 1rem;
+}
+
+.navLink {
+  padding: 0.5rem 0.75rem; /* mai mic padding */
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  color: #555;             /* gri mai modern */
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.navLink .mantine-NavLink-leftSection {
+  color: rgba(0, 191, 166, 0.9);
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.navLink:hover {
+  background-color: #00bfa6; /* culoare primară modernă */
+  color: black;
+}
+
+.navLink:hover .mantine-NavLink-leftSection {
+  color: white;
+}
+
+/* Active */
+.navLink[data-active='true'] {
+  border-color: #00bfa6;
+  color: #00bfa6;
+  background-color: rgba(0, 191, 166, 0.1); /* subtil pentru active */
+}
+
+.navLink[data-active='true'] .mantine-NavLink-leftSection {
+  color: #00bfa6;
+}
