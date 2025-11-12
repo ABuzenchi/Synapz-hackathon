@@ -70,3 +70,8 @@ body {
   color: #ffffff; 
   transform: scale(1.15); 
 }
+
+.nav-icon.active {
+  color: #ffffff;
+  transform: scale(1.15);
+}

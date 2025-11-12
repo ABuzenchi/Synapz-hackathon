@@ -33,7 +33,7 @@ const AuthPage = () => {
       if (foundUser) {
         setMessage(`✅ Welcome, ${foundUser.role}!`);
         localStorage.setItem("currentUser", JSON.stringify(foundUser));
-        if (foundUser.role === "user") navigate("/user");
+        if (foundUser.role === "user") navigate("/user-dashboard");
         else if (foundUser.role === "admin") navigate("/admin");
       } else {
         setMessage("❌ Invalid credentials.");

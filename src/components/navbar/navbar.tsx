@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { 
   FiHome, 
   FiUser, 
@@ -12,38 +13,41 @@ import './Navbar.css';
 export function NavbarComponent() {
   return (
     <div className="vertical-navbar">
-    
       <div className="navbar-top">
         <div className="logo">Synapz</div>
         
         <nav className="nav-icons">
-          <a href="#" className="nav-icon" title="Dashboard">
+          <NavLink to="/user-dashboard" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Dashboard">
             <FiHome />
-          </a>
-          <a href="#" className="nav-icon" title="Learning Modules">
+          </NavLink>
+
+          <NavLink to="/learning-modules" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Learning Modules">
             <FaGraduationCap />
-          </a>
-          <a href="#" className="nav-icon" title="Quizzes">
+          </NavLink>
+
+          <NavLink to="/quizzes" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Quizzes">
             <MdFactCheck />
-          </a>
-          <a href="#" className="nav-icon" title="HR Feedback">
+          </NavLink>
+
+          <NavLink to="/hr-feedback" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="HR Feedback">
             <FiMessageSquare />
-          </a>
-          <a href="#" className="nav-icon" title="Progress">
+          </NavLink>
+
+          <NavLink to="/progress" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Progress">
             <FaChartLine />
-          </a>
-          <a href="#" className="nav-icon" title="Settings">
+          </NavLink>
+
+          <NavLink to="/settings" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Settings">
             <FiSettings />
-          </a>
+          </NavLink>
         </nav>
       </div>
       
       <div className="navbar-bottom">
-        <a href="#" className="nav-icon" title="Logout">
+        <NavLink to="/logout" className="nav-icon" title="Logout">
           <FiLogOut />
-        </a>
+        </NavLink>
       </div>
-
     </div>
   );
 }

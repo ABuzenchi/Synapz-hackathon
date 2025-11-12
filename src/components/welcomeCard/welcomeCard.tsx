@@ -10,7 +10,7 @@ export function WelcomeCard(): React.ReactElement {
     <div className="welcome-card">
       <div className="welcome-text-content">
         <h2 className="welcome-heading">Hello Josh!</h2>
-        <p className="welcome-subtext">It's good to see you again.</p>
+        <p className="welcome-subtext">Keep up the great work! You're making progress every day.</p>
       </div>
       <div className="welcome-image-container">
         <img src={humanImage} alt="Waving human character" className="welcome-human-image" />
