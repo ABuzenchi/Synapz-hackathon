@@ -1,55 +1,49 @@
-import { useState } from 'react';
-import { NavLink, Title, ScrollArea } from '@mantine/core';
-import {
-  FaHome,
-  FaBook,
-  FaCamera,
-  FaPencilRuler,
-  FaInstagram,
-} from 'react-icons/fa';
+import { 
+  FiHome, 
+  FiUser, 
+  FiSettings, 
+  FiLogOut, 
+  FiMessageSquare 
+} from 'react-icons/fi';
+import { MdFactCheck } from "react-icons/md";
+import { FaGraduationCap, FaClipboardCheck, FaChartLine } from 'react-icons/fa';
+import './Navbar.css'; 
 
-// Importăm fișierul CSS
-import './navbar.css';
-
-interface NavLinkItem {
-  icon: React.ReactNode;
-  label: string;
-}
-
-const navLinks: NavLinkItem[] = [
-  { icon: <FaHome size="1rem" />, label: 'Dashboard' },
-  { icon: <FaBook size="1rem" />, label: 'Courses' },
-  { icon: <FaCamera size="1rem" />, label: 'Learning photography' },
-  { icon: <FaInstagram size="1rem" />, label: 'Master Instagram' },
-  { icon: <FaPencilRuler size="1rem" />, label: 'Basics of Drawing' },
-];
-
-export function Navbar() {
-  const [active, setActive] = useState('Dashboard');
-
-  const items = navLinks.map((item) => (
-    <NavLink
-      key={item.label}
-      active={item.label === active}
-      label={item.label}
-      leftSection={item.icon}
-      onClick={() => setActive(item.label)}
-      // Folosim clasa CSS globală
-      className="navLink" 
-    />
-  ));
-
+export function NavbarComponent() {
   return (
-    <div className="navbar">
-      <div className="header">
-        <Title order={2} c="black">
-          Synapz
-        </Title>
+    <div className="vertical-navbar">
+    
+      <div className="navbar-top">
+        <div className="logo">Synapz</div>
+        
+        <nav className="nav-icons">
+          <a href="#" className="nav-icon" title="Dashboard">
+            <FiHome />
+          </a>
+          <a href="#" className="nav-icon" title="Learning Modules">
+            <FaGraduationCap />
+          </a>
+          <a href="#" className="nav-icon" title="Quizzes">
+            <MdFactCheck />
+          </a>
+          <a href="#" className="nav-icon" title="HR Feedback">
+            <FiMessageSquare />
+          </a>
+          <a href="#" className="nav-icon" title="Progress">
+            <FaChartLine />
+          </a>
+          <a href="#" className="nav-icon" title="Settings">
+            <FiSettings />
+          </a>
+        </nav>
+      </div>
+      
+      <div className="navbar-bottom">
+        <a href="#" className="nav-icon" title="Logout">
+          <FiLogOut />
+        </a>
       </div>
 
-      <ScrollArea className="linksWrapper">
-        {items}
-      </ScrollArea>
     </div>
   );
 }
