@@ -8,6 +8,7 @@ import {
 } from 'react-icons/fi';
 import { MdFactCheck } from "react-icons/md";
 import { MdOutlineOndemandVideo } from "react-icons/md";
+import { BsHeadsetVr } from "react-icons/bs";
 import { FaGraduationCap, FaClipboardCheck, FaChartLine } from 'react-icons/fa';
 import './Navbar.css'; 
 
@@ -36,6 +37,10 @@ export function NavbarComponent() {
 
           <NavLink to="/video" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Video">
             <MdOutlineOndemandVideo />
+          </NavLink>
+
+          <NavLink to="/vr" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="VR">
+            <BsHeadsetVr />
           </NavLink>
 
           <NavLink to="/progress" className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'} title="Progress">

@@ -30,8 +30,8 @@
 }
 
 .auth-toggle button.active {
-  color: #00bfa6;
-  border-color: #00bfa6;
+  color: #36454F;
+  border-color: #36454F;
   font-weight: bold;
 }
 
@@ -83,7 +83,7 @@
 /* === BUTTON === */
 .auth-button {
   width: 100%;
-  background: #00bfa6;
+  background: #36454F;
   color: white;
   padding: 1rem;
   font-size: 1.2rem;
@@ -94,7 +94,7 @@
 }
 
 .auth-button:hover {
-  background: #00a58f;
+  background: #36454F;
 }
 
 /* === RESPONSIVE === */
