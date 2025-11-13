@@ -10,6 +10,7 @@ import QuizPage from './pages/QuizPage/QuizPage'
 import { ChatBoxAIPage } from './pages/ChatBoxAIPage/ChatBoxAIPage'
 import { ProgressPage } from './pages/ProgressPage/ProgressPage'
 import VideoPage from './pages/VideoPage/VideoPage'
+import VrPage from './pages/VrPage/VrPage'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/chatbox" element={<ChatBoxAIPage/>}/>
           <Route path="/progress" element={<ProgressPage/>}/>
           <Route path="/video" element={<VideoPage/>}/>
+          <Route path="/vr" element={<VrPage/>}/>
         </Routes>
       </BrowserRouter>
     </MantineProvider>

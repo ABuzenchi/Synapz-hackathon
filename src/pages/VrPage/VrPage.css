@@ -1,0 +1,59 @@
+.vr-page-container {
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-left: 80px;
+}
+
+.vr-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.vr-image-container {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vr-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 191, 166, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.vr-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 60px rgba(0, 191, 166, 0.6);
+}
+.join-button {
+  position: absolute;
+  bottom: 60px;
+  background-color: #ffffff; /* background alb */
+  color: #36454F; /* text albastru-gri închis, ca navbar-ul */
+  border: 2px solid rgba(54, 69, 79, 0.4); /* margine subtilă */
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(54, 69, 79, 0.2), 0 0 8px rgba(54, 69, 79, 0.3); /* glow subtil */
+  transition: all 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #f0f0f0; /* alb mai deschis la hover */
+  color: #00bfff; /* text albastru strălucitor la hover */
+  box-shadow: 0 8px 30px rgba(54, 69, 79, 0.4), 0 0 12px rgba(0, 191, 255, 0.5); /* glow mai vizibil */
+  transform: translateY(-3px);
+}
+
