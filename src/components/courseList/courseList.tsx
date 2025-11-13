@@ -38,38 +38,40 @@ function CourseItem({ iconUrl, title, author, duration }: CourseItemProps): Reac
 
 export function CourseList(): React.ReactElement {
 
-  const courses: CourseItemProps[] = [
-    {
-      iconUrl: 'https://cdn.iconscout.com/icon/free/png-256/figma-2-226079.png', // Figma icon
-      title: 'Learn Figma',
-      author: 'by Christopher Morgan',
-      duration: '6h 30min',
-    },
-    {
-      iconUrl: 'https://cdn-icons-png.flaticon.com/512/32/32292.png', // Camera icon (placeholder)
-      title: 'Analog photography',
-      author: 'by Gordon Norman',
-      duration: '3h 15min',
-    },
-    {
-      iconUrl: 'https://cdn-icons-png.flaticon.com/512/174/174855.png', // Instagram icon
-      title: 'Master Instagram',
-      author: 'by Sophie Gill',
-      duration: '7h 40min',
-    },
-    {
-      iconUrl: 'https://cdn-icons-png.flaticon.com/512/350/350315.png', // Pencil icon (placeholder)
-      title: 'Basics of drawing',
-      author: 'by Jean Tate',
-      duration: '11h 30min',
-    },
-    {
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg', // Photoshop icon
-      title: 'Photoshop - Essence',
-      author: 'by David Green',
-      duration: '5h 35min',
-    },
-  ];
+ const courses: CourseItemProps[] = [
+  {
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Microsoft_365_%282022%29.svg/1091px-Microsoft_365_%282022%29.svg.png', // Microsoft Office icon
+    title: 'Mastering Office 365',
+    author: 'by Synapz',
+    duration: '6h 30min',
+  },
+  {
+    iconUrl: 'https://www.loginradius.com/_next/static/media/gdpr-compliant.6f6aef57.webp', // GDPR / privacy icon
+    title: 'GDPR Compliance Essentials',
+    author: 'by Synapz',
+    duration: '3h 20min',
+  },
+  {
+    iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvU2tB7wyjuUMosuQgLcW6Tmjp-KmH0AjslQ&s', // Safety helmet icon for SSM
+    title: 'Occupational Health & Safety (SSM)',
+    author: 'by Synapz',
+    duration: '6h 30min',
+  },
+  {
+    iconUrl: 'https://img.freepik.com/premium-vector/generate-ai-artificial-intelligence-logo-ai-logo-concept_268834-2200.jpg?w=360', // AI / robot icon
+    title: 'Introduction to AI Basics',
+    author: 'by Synapz',
+    duration: '8h 30min',
+  },
+  {
+    iconUrl: 'https://www.arenasolutions.com/wp-content/uploads/What-is-Cloud-QMS.jpg', // Photoshop icon
+    title: 'Quality Management',
+    author: 'by Synapz',
+    duration: '5h 40min',
+  },
+];
+
+
 
   return (
     <div className="courses-section-container">
